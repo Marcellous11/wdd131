@@ -1,0 +1,24 @@
+:root{
+    --main-font: "Roboto"
+}
+
+body{
+    font-family: var(--main-font);
+    background: rgb(69, 139, 176);
+}
+.page_dimentions {
+    margin: 1rem auto;
+    border: 2px solid rgba(212, 212, 212, 0.382);
+    padding: 5px;
+    max-width: 640px;
+}
+
+main{ 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section{
+    background: rgb(180, 180, 180);
+}
