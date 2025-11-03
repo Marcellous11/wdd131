@@ -1,0 +1,27 @@
+@media screen and  (min-width: 550px){
+    
+header{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+
+}
+
+li{
+    padding:10px 10px;
+}
+button{
+    display: none;
+}
+
+main{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        height: 90vh;
+}
+}
