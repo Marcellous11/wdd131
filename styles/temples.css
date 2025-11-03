@@ -3,8 +3,11 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
     font-family: var(--main-font);
     margin: 0;
+    width: 100%;
 }
 
 
@@ -75,6 +78,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
     grid-template-columns: 1fr;
+    height: 100%;
     /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  */
     /* display: flex; */
     /* flex-direction: column; */
