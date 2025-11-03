@@ -41,7 +41,7 @@ button{
     right:10px
 
 }
-ul{
+nav{
     list-style-type: none;
     text-align: center;
     padding: 0;
@@ -52,18 +52,18 @@ ul{
     /* width: 1px; */
 }
 
-ul.open{
+nav.open{
     display: flex;
 }
 
 
-li {
+a {
     padding: 10px 0;
 }
-li:hover {
+a:hover {
     background-color: rgb(69, 49, 71);
 }
-li a {
+a {
     text-decoration: none;
     color: white;
     font-size: 16px;
