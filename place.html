@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="author" content="Marcellous Curtis Jr">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+    </head>
+    <body>
+        <header>
+            <h1>USA</h1>
+        </header>
+        <main>
+            <picture class="hero-container">
+                <source>
+                <source class="hero" srcset="images/seatle-large.webp" media="(min-width: 560px)">
+                <img class="hero" src="images/spaceneedle-small.webp">
+            </picture>
+            <section id="data">
+                <h2>Data</h2>
+                <dl>
+                    <dt>Area: </dt>         <dd id="area"></dd>
+                    <dt>Population:</dt>    <dd id="population"></dd>
+                    <dt>Capital: </dt>      <dd id="capital"></dd>
+                    <dt>Languages: </dt>    <dd id="lang"></dd>
+                    <dt>Currency: </dt>     <dd id="currency"></dd>
+                    <dt>Time Zone: </dt>    <dd id="timezone"></dd>
+                    <dt> Calling Code</dt>  <dd id="calddngcode"></dd>
+                    <dt>Internet TLD: </dt> <dd id="internettld"></dd>
+                   
+                </dl>
+            </section>
+            <section id="weather">
+                <h2>Weather </h2>
+                <picture>
+                    <source srcset="images/icon/weatherlarge.png" media="(min-width: 560px)"> 
+                    <img src="images/icon/weathersmall.png" alt="Weather Icon">
+                </picture>
+                <dl>
+                    <dt>Temperature: </dt> <dd id="temp"></dd>
+                    <dt>Conditions: </dt>  <dd id="conditions"></dd>
+                    <dt>Wind</dt>          <dd id="wind"></dd>
+                    <dt>Wind Chill</dt>    <dd id="windchill"></dd>
+                </dl>
+            </section>
+        </main>
+        <footer>
+            <p>
+                &copy;<span id="currentYear"></span> |  Marcellous Curtis Jr | Frisco TX, USA
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+        
+        <script src="scripts/place.js" async defer></script>
+        <script src="scripts/getdates.js" async defer></script>
+    </body>
+</html>

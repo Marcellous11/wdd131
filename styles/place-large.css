@@ -1,0 +1,68 @@
+@media screen and  (min-width: 560px){
+    
+    body {
+        max-width: 1000px;
+        color: var(--off-balck);
+        margin: 0 auto;
+        background-color: var(--off-balck);
+        
+    }
+
+    main{
+        display: grid;
+        grid-template: repeat(2,1fr) / repeat(3,1fr);
+        
+    }
+
+    h2{
+    text-align: left;
+    background-color: var(--secondary);
+    padding: 10px;
+    margin: 0;
+    position: relative;
+    right: 30px;
+}
+
+
+    .hero{
+        max-width: 1000px;
+        width: 1000px;
+    }
+
+    .hero-container{
+        grid-column: 1 /4 ;
+        grid-row: 1 /3 ;
+        height: 100%;
+    }
+    section{
+        border: none;
+        min-width: 250px;
+        transition: .25s;
+    }
+
+    section:hover{
+    box-shadow: 10px 10px 0px var(--primary);
+}
+
+
+    #data{
+        background-color: var(--off-white);
+        grid-column: 1 /2 ;
+        grid-row: 1 / 3;
+        height: 350px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    #weather{
+        background-color: var(--off-white);
+        grid-column: 3 /4 ;
+        grid-row: 1/ 3;
+        margin-bottom: 0px;
+        height: 300px;
+        margin-top: 250px;
+         margin-right: 10px;
+    }
+
+    
+    
+}

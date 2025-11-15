@@ -13,3 +13,5 @@ radius = 20;
 area = PI * radius * radius;
 radiusOutput.textContent = radius;
 areaOutput.textContent = area;
+
+let mine = [1,2,3].lastin
