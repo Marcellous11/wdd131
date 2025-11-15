@@ -63,6 +63,14 @@
          margin-right: 10px;
     }
 
+    #weathericon{
+        display: none;
+    }
+
+    #weather h2::after{
+        content: " ⛅";
+    }
+
     
     
 }
