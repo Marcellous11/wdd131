@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+table{
+    background-color: #FFFFFF;
+    color: black;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border: 1px solid #E5E5E5;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even){
+    background-color: #EEEEEE;
+}
+thead tr:nth-last-child(1){
+    background-color: red;
+}
+
+td{
+    padding: 5px;
+}
+th,td{
+    border: 1px solid #2a2a2a
+}
+
+thead th {
+    background-color: #333333;
+    color: white;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: large;
+}
+
+caption{
+    color: white;
+}
+
+.blank{
+    background-color: black;
+}
