@@ -1,0 +1,10 @@
+@media screen and (min-width:1000px){
+    .card-holder{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ; 
+
+    }
+    .card{
+        margin: 15px;
+    }
+}
