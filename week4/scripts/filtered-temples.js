@@ -92,7 +92,7 @@ const generateHTML = (temples) =>{
                         <dl>
                             <dt>Location: </dt>    <dd>${temple.location}</dd>
                             <dt>Dedication: </dt>  <dd id="dedication">${temple.dedicated}</dd>
-                            <dt>Size: </dt>        <dd id="internettld">${temple.area}</dd>
+                            <dt>Size: </dt>        <dd id="internettld">${temple.area} sq ft area</dd>
                         </dl>
                         <img src="${temple.imageUrl}" loading="lazy" alt=${temple.templeName}> 
                     </div>
