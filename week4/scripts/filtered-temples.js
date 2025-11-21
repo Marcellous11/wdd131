@@ -79,6 +79,7 @@ const temples = [
 ];
 
 const cardHolder = document.querySelector(".card-holder")
+const allButton = document.querySelector("#all")
 const oldButton = document.querySelector("#old")
 const newButton = document.querySelector("#new")
 const largeButton = document.querySelector("#large")
@@ -102,6 +103,11 @@ return cardColllection.join("")
 
 // landing page values / all values
 cardHolder.innerHTML = generateHTML(temples)
+
+allButton.addEventListener("click", (e)=>{
+    e.preventDefault()
+    cardHolder.innerHTML = generateHTML(temples)
+})
 
 oldButton.addEventListener("click", (e)=>{
     e.preventDefault()
