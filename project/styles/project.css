@@ -1,0 +1,89 @@
+:root{
+    --parimary:#0092d2;
+    --secondary: #990000;
+    --accent1:#56423d;
+    --accent2:#bea6a0;
+    --accent3:#005e9b;
+    --offwhite:#eefaff;
+    --offblack:#1f2223;
+    --headertext:"Italianno";
+    --maintext:"EB Garamond";
+}
+
+body{
+    background-color: var(--offblack);
+    color: var(--offwhite);
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    font-family: var(--main-text);
+    background-color: var(--accent3);
+    color: var(--offwhite);
+    padding: 40px 0;
+    margin: 0;
+}
+dl{
+    font-family: var(--main-text);
+    display: grid;
+     max-width: 500px;
+     margin:0 auto
+}
+
+dt{
+    font-family: var(--headertext);
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.primarybox:nth-of-type(1){
+    width: 100%;
+    height: 15px;
+    background-color: var(--parimary);
+}
+.primarybox:nth-of-type(2){
+    width: 100%;
+    height: 15px;
+    background-color: var(--secondary);
+}
+.primarybox:nth-of-type(3){
+    width: 100%;
+    height: 15px;
+    background-color: var(--accent1);
+}
+.primarybox:nth-of-type(4){
+    width: 100%;
+    height: 15px;
+    background-color: var(--accent2);
+}
+.primarybox:nth-of-type(5){
+    width: 100%;
+    height: 15px;
+    background-color: var(--accent3 );
+}
+
+#colorSchema{
+    background-color: var(--offwhite);
+    color: var(--offblack);
+    border-radius: 9px;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: var(--offwhite);
+}
+a:hover{
+    color: var(--parimary);
+}
+footer{
+    font-family: var(--main-text);
+    background: var(--offblack);
+    color: var(--offwhite);
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 700;
+}
