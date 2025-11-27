@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcellous Curtis">
+    <meta name="author" content="A customer feedback page with multiple metrics for review.">
+    <link rel="stylesheet" href="styles/form.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+
+            <label>Product Name *
+                <select name="project" required id="selectOption">
+                    <option value="" disabled selected>Select a Product ...</option>
+             
+                </select>
+            </label>
+            <div id="overall">Overall Rating * 
+                <label>
+                   <input type="radio" name="stars" value="1" id="onestart" required> ☆
+                </label>                
+                <label>
+                    <input type="radio" name="stars" value="2" id="twostart" required>☆☆
+                </label>                
+                <label>
+                    <input type="radio" name="stars" value="3" id="threestart" required>☆☆☆
+                </label>                
+                <label>
+                    <input type="radio" name="stars" value="4" id="fourstart" required>☆☆☆☆
+                </label>                
+                <label>
+                    <input type="radio" name="stars" value="5" id="fivestart" required>☆☆☆☆☆
+                </label>                
+            </div>
+
+             <label>Date of Installation *
+                <input type="date" id="dateinput" name="date" required>
+             </label> 
+                
+
+            <div id="feature">Which features did you find useful in the product? (click all that apply)
+               <label>
+                    <input type="checkbox" id="durability" name="durability" value="yes"> Durability
+               </label>
+                <label>
+                    <input type="checkbox" id="easeofuse" name="easeofuse" value="yes"> Ease Of Use   
+                </label>
+                <label>
+                    <input type="checkbox" id="performance" name="performance" value="yes"> Performance
+                </label>
+                <label>
+                    <input type="checkbox" id="design" name="design" value="yes">  Design   
+                </label>
+            </div>
+
+            <label for="writtenreview">Written Review (optional)
+                <textarea  id="writtenreview" name="writtenreview"></textarea>
+            </label>
+
+            <label>Name (optional)
+                <input type="text" id="username" name="username">
+            </label>
+            <label>
+                 <input type="submit" value="Post Review">
+            </label>
+           
+        </form>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy;<span id="currentYear"></span> |  Marcellous Curtis Jr | Frisco TX, USA
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/form.js"></script>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+</html>
