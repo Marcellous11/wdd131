@@ -79,3 +79,14 @@ select:required:valid
     outline:none ;   
 }
 
+@media only screen and (min-width: 500px) {
+ input[type="date"],
+input[type="textarea"],
+select[name="project"],
+textarea,
+input[type="text"]
+{
+
+    height: 22px;
+}
+}
