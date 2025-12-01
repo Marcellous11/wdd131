@@ -1,4 +1,5 @@
-{
+export default function  memberInfo(){
+  return{
   "members": [
     {
       "bioguideId": "C001098",
@@ -582,4 +583,6 @@
   ],
   "pagination": { "count": 36 },
   "request": { "contentType": "application/json", "format": "json" }
+}
+
 }

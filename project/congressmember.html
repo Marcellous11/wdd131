@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcellous Curtis">
+    <meta name="description" content="Display all members of the texas congress indicating their party and name paired with their photo">
+    <link rel="stylesheet" href="styles/congress.css">
+    <link rel="stylesheet" href="styles/congress-large.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italianno&display=swap" rel="stylesheet">
+    <script src="scripts/congressmember.js" type="module" defer></script>
+    <title>Texas Congress</title>
+</head>
+<body>
+    <header>
+        <h1>Congress Member TX</h1>
+        <button id="menubtn"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="congressmembers.html">Members</a></li>
+                <li><a href="congressdata.html">Statistics</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+         <div id="hero-img-container">
+            <picture>
+                <source srcset="././images/large-soloflag.webp" media="min-width: 1000px">
+                <img src="./images/small-soloflag.webp">
+            </picture>
+        </div>
+        
+        <div class="largeCard">
+            <h2  id="name"> </h2>  
+            <img >
+            <dl>
+                <dt>Party</dt>
+                <dd id="party"></dd>
+                <dt>Chamber</dt>
+                <dd id="chamber"></dd>
+                <dt>Start  Year</dt>
+                <dd id="startdate"></dd>
+
+            </dl>
+            <button onclick="location.href = 'congressmembers.html'">Back to Members</button>
+        </div>      
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentYear"></span> |  Marcellous Curtis Jr | Frisco TX, USA
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

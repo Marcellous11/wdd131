@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcellous Curtis">
+    <meta name="description" content="Display all members of the texas congress indicating their party and name paired with their photo">
+    <link rel="stylesheet" href="styles/congress.css">
+    <link rel="stylesheet" href="styles/congress-large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italianno&display=swap" rel="stylesheet">
+    <script src="scripts/congressmembers.js" type="module" defer></script>
+    <title>Texas Congress</title>
+</head>
+<body>
+    <header>
+        <h1>Texas Congress Members</h1>
+        <button id="menubtn"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="congressmembers.html">Members</a></li>
+                <li><a href="congressdata.html">Statistics</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+
+        <div id="hero-img-container">
+        <picture>
+            <source srcset="./images/large-americanflag.webp"media="min-width: 1000px">
+            <img src="./images/small-americanflag.webp">
+        </picture>
+        </div>   
+        <section id="intro-container">
+            <h2>All Members</h2>
+            <span>United States of America</span>
+            <p>A comprehensive directory of Texas’s elected federal officials, featuring every current U.S. Senator and House Representative from the state. This page serves as an accessible resource for Texans looking to understand who represents them in Washington.
+            </p>
+            <form >
+                <legend>Party</legend>
+                <label>
+                    <input type="radio" name="party" value="all"> All
+                </label>
+                <label>
+                    <input type="radio" name="party" value="Republican"> Repbulican
+                </label>
+                <label>
+                    <input type="radio" name="party" value="Democratic">Democratic
+                </label>
+                <input type="submit" value="Filter">
+            </form>            
+        </section>
+
+        <section>
+            <h3>Senators</h3>
+            <div id="senatorsection" class="card-container"></div> 
+        </section>
+        <section>
+            <h3>House Representatives</h3>
+            <div  id="houseofrepsection"class="card-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentYear"></span> |  Marcellous Curtis Jr | Frisco TX, USA
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
