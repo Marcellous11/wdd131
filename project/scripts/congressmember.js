@@ -8,6 +8,7 @@ let largeCard = document.querySelector(".largeCard")
 // let cardImage = document.querySelector(".largeCard img")
 let member = getMemeber()
 
+
 toggleMenu()
 menubtn.addEventListener("click",()=>{
     toggleMenu()
