@@ -17,8 +17,8 @@
     <main>
         <form method="get" action="review.html">
 
-            <label>Product Name *
-                <select name="project" required id="selectOption">
+            <label for="selectOption">Product Name *
+                <select name="project"  required id="selectOption">
                     <option value="" disabled selected>Select a Product ...</option>
              
                 </select>
@@ -42,14 +42,14 @@
             </label>                
             
 
-             <label>Date of Installation *
+             <label for="dateinput">Date of Installation *
                 <input type="date" id="dateinput" name="date" required>
              </label> 
                 
 
             <p id="feature">Which features did you find useful in the product? (click all that apply)</p>
 
-            <label>
+            <label for="durability">
                 <input type="checkbox" id="durability" name="durability" value="yes"> Durability
             </label>
             <label for="easeofuse">
@@ -69,7 +69,7 @@
             <label for="username">Name (optional)
                 <input type="text" id="username" name="username">
             </label>
-            <label for=submitbtn">
+            <label for="submitbtn">
                  <input type="submit" id="submitbtn" value="Post Review">
             </label>
            
